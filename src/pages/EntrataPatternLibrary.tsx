@@ -16,6 +16,11 @@ import {
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import { Link } from 'react-router-dom';
 
+// Helper to get image URL from asset name
+function getImageUrl(imageName: string) {
+  return new URL(`../assets/${imageName}`, import.meta.url).href;
+}
+
 // Import Entrata SVG icons
 const entrataIcons = [
   new URL('../assets/svg icons from entrata/Apartments.svg', import.meta.url).href,
@@ -122,7 +127,7 @@ export function EntrataPatternLibrary() {
             backgroundSize: '50px 50px'
           }} />
           <ImageWithFallback
-            src="src/assets/design-system.png"
+            src={getImageUrl("design-system.png")}
             alt="Blueprint background"
             className="w-full h-full object-cover mix-blend-luminosity"
           />
@@ -234,7 +239,7 @@ export function EntrataPatternLibrary() {
             >
               <div className="aspect-square bg-slate-800/50 backdrop-blur-sm rounded-2xl border border-slate-700 overflow-hidden">
                 <ImageWithFallback
-                  src="src/assets/design-system.png"
+                  src={getImageUrl("design-system.png")}
                   alt="Fragmented design"
                   className="w-full h-full object-cover opacity-40"
                 />

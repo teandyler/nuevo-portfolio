@@ -57,7 +57,7 @@ export function CaseStudies() {
             </div>
             <div className="aspect-video bg-slate-800 rounded-xl overflow-hidden border border-slate-700">
               <img
-                src="src/assets/design-system.png"
+                src={getImageUrl("design-system.png")}
                 alt="Entrata Pattern Library"
                 className="w-full h-full object-cover object-top opacity-70 hover:opacity-100 transition-opacity"
               />
