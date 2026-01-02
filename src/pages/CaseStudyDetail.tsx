@@ -226,7 +226,7 @@ export function CaseStudyDetail() {
       </section>
       
       {/* TL;DR Section */}
-      <section className="py-32 bg-gradient-to-b from-emerald-900 to-emerald-950">
+      <section className="py-8 md:py-32 bg-gradient-to-b from-emerald-900 to-emerald-950">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeInUp} className="max-w-4xl mx-auto justify-center items-center flex flex-col">
             <h2 className="text-3xl md:text-4xl mb-6 text-center font-bold text-emerald-100">TL;DR</h2>
@@ -238,7 +238,7 @@ export function CaseStudyDetail() {
       </section>
       
       {/* Problem Section */}
-      <section className="py-16 md:py-32 bg-gradient-to-b from-slate-900 to-slate-950">
+      <section className="py-8 md:py-32 bg-gradient-to-b from-slate-900 to-slate-950">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeInUp} className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12">
             {/* Problem Image */}
@@ -246,7 +246,7 @@ export function CaseStudyDetail() {
               <ImageWithFallback
                 src={problemImage}
                 alt="Problem illustration"
-                className="w-full h-auto object-cover"
+                className="w-full h-full object-cover"
               />
             </div>
             <div className="flex flex-col gap-6">
@@ -260,7 +260,7 @@ export function CaseStudyDetail() {
       </section>
       
       {/* Solution Section */}
-      <section className="py-32 bg-slate-800/50 backdrop-blur-sm">
+      <section className="py-8 md:py-32 bg-slate-800/50 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeInUp} className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl mb-12 text-center font-bold">Solution</h2>
@@ -292,7 +292,7 @@ export function CaseStudyDetail() {
       </section>
       
       {/* Impact & Metrics Section */}
-      <section className="py-32 bg-gradient-to-b from-slate-900 to-slate-950">
+      <section className="py-8 md:py-32 bg-gradient-to-b from-slate-900 to-slate-950">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeInUp} className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl mb-12 text-center font-bold">Impact & Metrics</h2>
@@ -304,7 +304,7 @@ export function CaseStudyDetail() {
       </section>
       
       {/* Learnings Section */}
-      <section className="py-32 bg-slate-800/50 backdrop-blur-sm">
+      <section className="py-8 md:py-32 bg-slate-800/50 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeInUp} className="max-w-4xl mx-auto flex flex-col items-center justify-center gap-6">
             <BookOpen className="w-8 h-8 text-indigo-400" />
@@ -319,7 +319,7 @@ export function CaseStudyDetail() {
       </section>
       
       {/* What's Next Section */}
-      <section className="py-32 bg-gradient-to-b from-slate-900 to-slate-950">
+      <section className="py-8 md:py-32 bg-gradient-to-b from-slate-900 to-slate-950">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeInUp} className="max-w-4xl mx-auto flex flex-col items-center justify-center gap-6">
             <TrendingUp className="w-8 h-8 text-green-400" />
@@ -334,7 +334,7 @@ export function CaseStudyDetail() {
       </section>
       
       {/* Navigation */}
-      <section className="py-32 bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden">
+      <section className="py-8 md:py-32 bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/20 via-purple-900/20 to-indigo-900/20" />
         
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
